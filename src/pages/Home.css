@@ -1,0 +1,314 @@
+/* Home.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #004080;
+  }
+  
+  /* Import a stylish font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  overflow: hidden;
+  margin: 20px 0; /* Space between sections */
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Carousel Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+/* Vision and Mission Section */
+.vision-mission-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  margin: 40px 0;
+}
+
+.vision-mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #004080;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.vision-mission-container {
+  display: flex;
+  justify-content: space-between; /* Ensure items are spaced evenly */
+  align-items: flex-start; /* Align items at the top */
+  gap: 30px;
+}
+
+.vision-mission-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Ensure both items take equal width */
+  max-width: 48%; /* Prevents exceeding container width */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-mission-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vision-mission-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .vision-mission-container {
+    flex-direction: column; /* Stacks on small screens */
+    align-items: center;
+  }
+
+  .vision-mission-item {
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+
+  
+  /* Directors Section Styling */
+.directors-section {
+  padding: 40px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  text-align: center;
+}
+
+.directors-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #004080;
+  font-family: 'Poppins', sans-serif;
+}
+
+.directors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Spread directors evenly */
+  gap: 30px; /* Spacing between directors */
+}
+
+.director-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Card shadow */
+  width: 300px; /* Set card width */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.director-item:hover {
+  transform: translateY(-10px); /* Slight hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensuring all director images have the same size */
+.director-img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image fits properly */
+  border-radius: 10px; /* Rounded corners on images */
+  margin-bottom: 15px;
+}
+
+.director-bio {
+  font-size: 1rem;
+  color: #555;
+}
+
+.director-item p {
+  margin: 10px 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .directors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .director-item {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+ /* Products Section */
+.products-section {
+  padding: 20px;
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows products to wrap if the screen size is smaller */
+}
+
+.product-item {
+  flex: 1;
+  max-width: 22%; /* Adjust the max-width to fit 4 products side by side */
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.product-img {
+  width: 100%; /* Full width within the container */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and covers the entire area */
+  border-radius: 8px; /* Rounded corners */
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    max-width: 48%; /* Adjusts to 2 products per row on smaller screens */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    max-width: 100%; /* Stacks products on top of each other on very small screens */
+  }
+}
+
+
+  
+ /* Core Values Section Styling */
+.core-values-section {
+  background-color: #f8fafc; /* Light background for contrast */
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.core-values-section h2 {
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Stylish font */
+}
+
+.values-container {
+  display: flex;
+  flex-wrap: wrap; /* Make the items wrap on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Add spacing between value items */
+}
+
+.value-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for card effect */
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-10px); /* Add hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.value-item i {
+  font-size: 2rem;
+  color: #004080; /* Same color for icon and heading */
+  margin-bottom: 10px;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  color: #004080;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .values-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-section {
+  background-color: white;  /* background color for contrast */
+  color: black;            /* White text for visibility */
+  text-align: center;       /* Center the text */
+  padding: 0px 70px;          /* Add some padding for spacing */
+  font-weight: bold;        /* Make the text bold */
+  position: relative;       /* This ensures it stays at the bottom if content is short */
+  bottom: 0;                /* Stick it to the bottom */
+  width: 100%;              /* Ensure it covers the full width */
+}
+
+
+  

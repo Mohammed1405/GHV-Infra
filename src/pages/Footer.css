@@ -1,0 +1,24 @@
+/* Footer Styles */
+.footer {
+    background-color: #8dafd1; /* Adding a background color */
+    padding: 20px;             /* Padding for some space around the text */
+    text-align: center;         /* Center align the text */
+    color: white;               /* White text for contrast */
+    border-top: 5px solid #ccc; /* A subtle top border for separation */
+  }
+  
+  .footer p {
+    margin: 0;                 /* Remove default margins */
+    font-weight: bold;          /* Make the text bold */
+    font-size: 1.1rem;          /* Slightly larger text */
+  }
+  
+  .footer p a {
+    color: #f1c40f;            /* Optional: Add color to any links within the footer */
+    text-decoration: none;
+  }
+  
+  .footer p a:hover {
+    text-decoration: underline; /* Optional: Add hover effect to links */
+  }
+  
