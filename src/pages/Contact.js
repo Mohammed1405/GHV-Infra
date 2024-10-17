@@ -77,9 +77,9 @@ function Contact() {
       <section className="contact-info-section">
         <h2>Our Contact Information</h2>
         <div className="contact-details">
-          <p><strong>Address:</strong> GHV (India) Pvt. Ltd., First Floor, AML Center - 1, Mahakali Caves Road, Andheri (East),
+          <p><strong>Address:</strong> GHV Infra Projects Limited, A-505, Kanakia Wallstreet, Chakala, Andheri Kurla Road, Andheri (East),
             Mumbai - 400093 India.</p>
-          <p><strong>Phone:</strong> (022) 67250016</p>
+          <p><strong>Phone:</strong> (022) 67250014 / 15</p>
           <p><strong>Email:</strong> info@ghvgroup.com</p>
         </div>
       </section>
