@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/about';  // Ensure the path matches the case of the actual file
-import Contact from './pages/contact';  // Ensure the path matches the case of the actual file
+import About from './pages/About';  // Ensure the path matches the case of the actual file
+import Contact from './pages/Contact';  // Ensure the path matches the case of the actual file
 import WhatWeDo from './pages/WhatWeDo';
 import Clients from './pages/Clients';
 import './App.css';  // Import the new CSS file for styling
@@ -24,10 +24,10 @@ function App() {
           <nav className="navbar">
             <ul className="nav-links">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">about</Link></li>
+              <li><Link to="/about">About</Link></li>
               <li><Link to="/what-we-do">What We Do</Link></li>
               <li><Link to="/clients">Clients</Link></li>
-              <li><Link to="/contact">contact</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
         </header>
