@@ -24,10 +24,10 @@ function App() {
           <nav className="navbar">
             <ul className="nav-links">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
+              <li><Link to="/about">about</Link></li>
               <li><Link to="/what-we-do">What We Do</Link></li>
               <li><Link to="/clients">Clients</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/contact">contact</Link></li>
             </ul>
           </nav>
         </header>
