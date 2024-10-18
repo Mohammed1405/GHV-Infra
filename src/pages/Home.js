@@ -24,7 +24,7 @@ function Home() {
 
   return (
     <div className="home-container">
-
+              
 
        {/* Image Carousel Section */}
        <div className="carousel-container">
